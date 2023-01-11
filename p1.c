@@ -105,7 +105,7 @@ void afisare_continut_fisier(char *nume_fisier)
 
     while (nr_set_date == 1)
     {
-        printf("\n----------------------------------");
+        printf("\n*------------*");
         printf("\n-Nr. de inmatriculare: %s", autoturism.nr_de_inmatriculare);
         printf("\n-Marca: %s", autoturism.marca);
         printf("\n-Culoare: %s", autoturism.culoare);
@@ -115,7 +115,7 @@ void afisare_continut_fisier(char *nume_fisier)
         printf("\n-Serie sasiu: %s", autoturism.serie_sasiu);
         printf("\n-Vechime: %d", autoturism.vechime);
         printf("\n-Nr. de km parcursi: %f", autoturism.nr_de_km);
-        printf("\n----------------------------------\n");
+        printf("\n*------------*\n");
 
         nr_set_date = fread(&autoturism, sizeof(autoturism), 1, f);
     }
@@ -190,12 +190,12 @@ int main()
     creare_fisier(nume_fisier);
     afisare_continut_fisier(nume_fisier);
 
-    printf("\n----------------------------------\n");
+    printf("\n*---------------*\n");
     printf("Adaugare de noi autoturisme:\n");
     adaugare_autoturism_nou(nume_fisier);
     afisare_continut_fisier(nume_fisier);
 
-    printf("\n----------------------------------\n");
+    printf("\n*---------------*\n");
     printf("Modificare date autoturisme:\n");
     modificare_date_autoturism(nume_fisier);
     afisare_continut_fisier(nume_fisier);
