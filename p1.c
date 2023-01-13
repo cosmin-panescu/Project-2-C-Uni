@@ -111,10 +111,10 @@ void afisare_continut_fisier(char *nume_fisier)
         printf("\n-Culoare: %s", autoturism.culoare);
         printf("\n-Nr. de locuri: %d", autoturism.nr_de_locuri);
         printf("\n-Tip de combustibil: %s", autoturism.tip_de_combustibil);
-        printf("\n-Capacitate cilindrica motor: %f", autoturism.capacitate_cilindrica_motor);
+        printf("\n-Capacitate cilindrica motor: %.2f", autoturism.capacitate_cilindrica_motor);
         printf("\n-Serie sasiu: %s", autoturism.serie_sasiu);
         printf("\n-Vechime: %d", autoturism.vechime);
-        printf("\n-Nr. de km parcursi: %f", autoturism.nr_de_km);
+        printf("\n-Nr. de km parcursi: %.2f", autoturism.nr_de_km);
         printf("\n*------------*\n");
 
         nr_set_date = fread(&autoturism, sizeof(autoturism), 1, f);
